@@ -31,13 +31,13 @@ showNotes();
         }else{
             notesObj = JSON.parse(notes);
         }
-         let titleNew = document.getElementById("title").value;
+         
 
         let html =  "";
         notesObj.forEach(function (element,index,titleNew){
             html += ` <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">${titleNew}</h5>
+                <h5 class="card-title">${index + 1} + get.date();</h5>
                 <p class="card-text">${element}</p>
                 <button id="${index}" onclick="deleteNotes(this.id)" class="delete btn">Delete</button>
             </div>
