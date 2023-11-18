@@ -37,7 +37,7 @@ showNotes();
         notesObj.forEach(function (element,index){
             html += ` <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
             <div class="card-body">
-                <h5 class="card-title">Notes ${titleNew}</h5>
+                <h5 class="card-title">${titleNew}</h5>
                 <p class="card-text">${element}</p>
                 <button id="${index}" onclick="deleteNotes(this.id)" class="delete btn">Delete</button>
             </div>
